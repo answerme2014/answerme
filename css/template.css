@@ -48,7 +48,7 @@ a:hover{
 	float: right;
 	padding-top: 11px;
 	margin-right: 30px;
-	display: none;
+	display: inherit;
 }
 .loged a{
 	color: white;
@@ -62,7 +62,7 @@ a:hover{
 }
 /*未登录*/
 .unloged{
-	display: inherit;
+	display: none;
 	margin-right: 30px;
 }
 /* 导航栏 结束 */
