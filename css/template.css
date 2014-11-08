@@ -67,6 +67,50 @@ a:hover{
 }
 /* 导航栏 结束 */
 
+#freeLog {
+	margin-left: 10%;
+}
+
+#forgetPassword {
+	margin-left: 10%;
+}
+
+#modalLogin .modal-footer .btn{
+	background-color: #19B68A;
+	color: white;
+	font-weight: bolder;
+}
+
+#modalRegister .modal-footer .btn{
+	background-color: #19B68A;
+	color: white;
+	font-weight: bolder;
+}
+
+#selectSchool {
+	width: 468px;
+	height: 42px;
+	margin-left: 23%;
+}
+
+#selectCollege {
+	width: 468px;
+	height: 42px;
+	margin-left: 23%;
+}
+
+#selectMajor {
+	width: 468px;
+	height: 42px;
+	margin-left: 23%;
+}
+
+#selectYear {
+	width: 468px;
+	height: 42px;
+	margin-left: 23%;
+}
+
 /* 内容 */
 #content {
 	margin-top: 45px;
