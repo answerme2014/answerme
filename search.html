@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!--题目-->
-    <title>AnswerMe-Template</title>
+    <title>AnswerMe-Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS-->
     <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +11,7 @@
     <link href="css/flat-ui.css" rel="stylesheet">
     <!--模板css-->
     <link href="css/template.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet" /> 
+    <link href="css/search.css" rel="stylesheet" /> 
     <!--添加你的CSS-->
 
     <!--收藏夹图标-->
@@ -179,87 +179,107 @@
    <!-- 大家在content中填写自己的页面内容 --> 
    <!-- 把你的css添加到上面的css中，把你的js添加到下面的js中--> 
    <!-- 除了添加，不要改动一切其他东西--> 
-   <form role="form"> 
-    <div class="span1"> 
-     <div class="input-group"> 
-      <input type="text" class="form-control" id="search" /> 
-      <span class="input-group-btn"> <button type="submit" class="btn btn-primary" onclick="SubmitFunction()"> 搜索课程 </button> <button type="submit" class="btn btn-primary" onclick="SubmitFunction()"> 搜索作业 </button> </span> 
-      
-      
-     </div>
-     <!-- /input-group --> 
-
+    <div class= "span1">
+      <div class="input-group"> 
+        <input type="text" class="form-control" placeholder="" id= "search">
+        <span class="input-group-btn"> 
+          <button type="submit" class="btn btn-primary" onclick="SubmitFunction()"> 搜索课程 </button> 
+          <button type="submit" class="btn btn-primary" onclick="SubmitFunction()"> 搜索作业 </button>
+        </span> 
+      </div>
     </div>
-    <!-- /.span1 --> 
-   </form> 
-
-   <div class="span2"> 
-    <p><font color="#ADADAD">最热课程</font></p> 
-   </div> 
-   <div class="sum"> 
-    <div class="top10"> 
-     <a href="#" class="list-group-item active" id = "top10title">
-   贡献排行榜
-</a>
-<a href="#" class="list-group-item">isco</a>
-<a href="#" class="list-group-item">李度山</a>
-<a href="#" class="list-group-item">Austin_Yang</a>
-<a href="#" class="list-group-item">大计应</a>
-<a href="#" class="list-group-item">德盛</a>
-    </div> 
-    <div class="main"> 
-     <div class="span3"> 
-      <div class="class_text"> 
-       <div class="class_head"> 
-        <p style="font-family:verdana;color:#19B68A"> <a href="url">《数据库原理》 中山大学软件学院 冯剑琳 </a> </p> 
-       </div> 
-       <div class="class_content"> 
-        <p style="font-family:verdana;font-size:50%;color:black"> 《数据库系统概论》（第四版）是数据管理的最新技术，是计算机科学的重要分支，它为计算机专业、管理专业等众多学科提供利用计算机技术进行数据管理的基本理论知识，是计算机专业、管理专业等学科的专业必修课。 本课程主要介绍数据库的基本理论和应用方法。本课程的任务是通过各个教学环节，运用各种教学手段和方法，使学生在掌握数据模型、数据库管理系统、数据库语言及数据库设计理论等基本理论知识的基础上，逐步具有开发和设计数据库的能力，为进一步开发和设计大型信息系统打下坚实基础。 数据库技术和系统已经成为信息基础设施的核心技术和重要基础。数据库技术作为数据管理的最有效的手段，极大的促进了计算机应用的发展。 </p> 
-        <div class="fans_num"> 
-         <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
-        </div> 
-       </div> 
-      </div> 
-      <div class="classpic"> 
-       <a href="url"><img src="resource/yy/class1.jpg" width="120" ;="" align="right" height="170" /></a> 
-      </div> 
-     </div> 
-     <div class="clear"> 
-      <div class="span3"> 
-       <div class="class_text"> 
-        <div class="class_head"> 
-         <p style="font-family:verdana;color:#19B68A"> <a href="url">《会计电算化》 厦门大学金融学院 吕晶 </a> </p> 
-        </div> 
-        <div class="class_content"> 
-         <p style="font-family:verdana;font-size:50%;color:black"> 《会计电算化》，就是计算机技术在会计工作中的应用，是会计专业的核心课程，是经济类专业的一门专业主干课程，属于必修课。本课程在教学中按照会计核算岗位工作的基本流程，依托财务核算软件按照系统初始设置、建账、算账、结账、报表输出的过程安排整个教学内容，学生可以通过实际案例，利用财务软件完成整个会计核算工作，整个课程以突出对学生会计职业能力的培养为特色。 本课程以传授会计电算化必备的理论知识和基本操作技能为主要目的，要求学生掌握会计电算化的基本概念和基础知识，理解实现会计电算化的意义、步骤和方法。 </p> 
-         <div class="fans_num"> 
-          <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
-         </div> 
-        </div> 
-       </div> 
-       <div class="classpic"> 
-        <a href="url"><img src="resource/yy/class4.jpg" width="120" ;="" align="right" height="170" /></a> 
-       </div> 
-      </div> 
-      <div class="clear"> 
-       <div class="span3"> 
-        <div class="class_text"> 
-         <div class="class_head"> 
-          <p style="font-family:verdana;color:#19B68A"> <a href="url">《机械设计基础》 西安交通大学机械系 王克 </a> </p> 
-         </div> 
-         <div class="class_content"> 
-          <p style="font-family:verdana;font-size:50%;color:black"> 本课程是机械制造类各专业的一门重要的专业课，它的任务是使学生掌握常用机构和通用零件的基本理论和基本知识，初步具有这方面的分析、应用、设计能力，并通过必要的基本技能训练，培养学生正确的设计思想和严谨的工作作风，为培养高素质技能型人才奠定基础。因此在机械类及近机械类专业的教学计划中占有重要地位和作用，是高等工科院校中近机械类专业一门主干课程，在人才培养的教学计划中占有重要的地位。该课程60学时，承担学院机电工程系各专业的机械设计基础课程的教学任务。 </p> 
+      <div class= "span2">
+        <p><font color = "#ADADAD">相关作业</font></p>
+      </div>
+      <div class="not_found">
+        <p><center>Answer尚未收录相关课程或作业信息，您可以选择创建相关课程</center></p>
+        <div class = "buttons">
+        <button type="button" class="btn btn-embossed btn-primary">回到首页</button>
+        <button type="button" class="btn btn-embossed btn-primary">创建课程</button>
+      </div>
+      </div>
+      <div class = "found">
+      <div class= "span3">
+        <div class= "class_text" >
+          <div class= "class_head">
+            <p style="font-family:verdana;color:#19B68A">
+              <a href="url">《数据库原理》 中山大学软件学院  冯剑琳
+              </a>
+            </p>
+          </div>
+          <div class= "class_content">
+          <p style="font-family:verdana;font-size:50%;color:black">
+            第3周作业：</br>
+            1、显示当前数据库服务器中的数据库列表：mysql> SHOW DATABASES;</br>
+            2、建立数据库：mysql> CREATE DATABASE 库名;</br>
+            3、建立数据表：mysql> USE 库名;mysql> CREATE TABLE 表名 (字段名 VARCHAR(20), 字段名 CHAR(1));</br>
+            4、删除数据库：mysql> DROP DATABASE 库名;</br>
+            5、合理的使用索引，删除数据表：mysql> DROP TABLE 表名；
+          </p>
           <div class="fans_num"> 
            <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
           </div> 
-         </div> 
-        </div> 
-        <div class="classpic"> 
-         <a href="url"><img src="resource/yy/class5.jpg" width="120" ;="" align="right" height="170" /></a> 
-        </div> 
-       </div> 
+        </div>
+      </div>
+      <div class = "classpic">
+       <a href="url"><img src="resource/yy/class1.jpg" width="130" ;="" align="right" height="180" /></a> 
       </div> 
-     </div> 
+    </div>
+    <div class = "clear"/>
+      <div class= "span3">
+        <div class= "class_text" >
+          <div class= "class_head">
+            <p style="font-family:verdana;color:#19B68A">
+              <a href="url">《数据库基础》 中山大学信息科学与技术学院  李凌
+              </a>
+            </p>
+          </div>
+          <div class= "class_content">
+          <p style="font-family:verdana;font-size:50%;color:black">
+            第4周作业：</br>
+            1．现有关系数据库如下： </br>
+            数据库名：我班同学数据库、同学表(学号 char(6)，姓名，性别，年龄，民族，身份证号，宿舍号) </br>
+            用SQL语言实现下列功能的sql语句代码：</br>
+            1).创建数据库“我班同学数据库”代码。</br>
+            2).创建数据表“宿舍表”代码；
+          </p>
+          <div class="fans_num"> 
+           <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
+          </div> 
+        </div>
+      </div>
+      <div class = "classpic">
+        <a href="url"><img src="resource/yy/class2.jpg" width="130" ;="" align="right" height="180" /></a> 
+      </div> 
+      </div> 
+      <div class = "clear"/>
+      <div class= "span3">
+        <div class= "class_text" >
+          <div class= "class_head">
+            <p style="font-family:verdana;color:#19B68A">
+              <a href="url">《数据库原理》 上海交通大学计算机系  王文
+              </a>
+            </p>
+          </div>
+          <div class= "class_content">
+          <p style="font-family:verdana;font-size:50%;color:black">
+            第7周作业：</br>
+            1、简述数据库管理技术发展的三个阶段。各阶段的特点是什么？ </br>
+            2、数据库系统包括哪几个主要组成部分？各部分的功能是什么？画出整个数据库系统的层次结构图。</br>
+            3、DBA指什么？它的主要职责是什么？</br>
+            4、解释实体、属性、实体键、实体集、实体型、实体联系类型、记录、数据项、字段、记录型、文件、实体模型、数据模型的含义。 </br>
+            5、合理的使用索引，分析例2
+          </p>
+         <div class="fans_num"> 
+           <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
+          </div> 
+        </div>
+      </div>
+      <div class = "classpic">
+        <a href="url"><img src="resource/yy/class3.jpg" width="130" ;="" align="right" height="180" /></a> 
+      </div> 
+    </div>
+  </div>
     </div> 
     <!-- jQuery 的js --> 
     <script src="js/vendor/jquery.min.js"></script> 
@@ -276,7 +296,7 @@
         if (inputs == "")
 　　{
 　　　　　document.getElementById("search").value="输入不能为空!";
-document.getElementById("search").style.backgroundColor = "red";
+
 　　}
     }
   </script>  
