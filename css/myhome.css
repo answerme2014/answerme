@@ -1,0 +1,98 @@
+.loged {
+	display: inherit;
+}
+
+.unloged {
+	display: none;
+}
+
+body {
+	margin:0!important;
+}
+
+#content {
+	height: 555px;
+	background-color: #FFF;
+	margin-bottom: 0!important;
+}
+
+.left {
+	margin: 45px 2px 0 11px;
+	float: left;
+}
+
+.todo {
+	margin-bottom: 0!important;
+}
+
+.course-list {
+	height: 510px;
+	width: 268px;
+	overflow: auto;
+	background-color: #2c3e50;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.course-search-field {
+	width: 150px;
+}
+
+.search-type {
+	float: left;
+	background-color: #1abc9c;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	margin-top: 1%;
+	border-color: #1abc9c;;
+}
+
+.search-type:after {
+	border-width: 0;
+}
+
+.search-type option {
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.course-list li:after {
+	display: none;
+}
+
+.course-name {
+	text-align: center;
+}
+
+.right {
+	margin: 45px 11px 0 0px;
+	width: 810px;
+	height: 510px;
+	float: right;
+	background-color: #ecf0f1;
+	font-family: "微软雅黑";
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.homework {
+	width: 805px;
+	height: 510px;
+}
+
+.homework li{
+	list-style: none;
+}
+
+.homework-list-item {
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 3px;
+	background-color: #eff0f2;
+	border-color: #e1e1e8;
+}
+
+.homework-content {
+	margin-left: auto;
+	margin-right: auto;
+}
