@@ -15,7 +15,8 @@
 }
 
 .zuoyecishu {
-  margin-left: 70px;
+  margin-left: 105px;
+  margin-top:20px;
   float: left;
   width: 200px;
 }
@@ -26,22 +27,61 @@
   margin-right: auto;
   border-width: medium;
   padding:20px 10px 10px 20px;
+ ;
 }
 
 
 .bianji {
-  float: right;
-  margin-right: 90px;
+  margin-right: 300px;
+  margin-top:20px;
+  border-width: medium;
+  float: left;
+  
+}
+
+.bianji h4 {
+  height: 61px;
+}
+
+.fui-heart {
+  margin-left: 0px;
+  color:#00bb99
+
+}
+
+.lishibanben {
+  margin-top:12px;
+  margin-left: 100px;
   border-width: medium;
 }
 
-
 .t1 {
-background-color:#F0F0F0;
-border-radius:15px;
-padding:20px 10px 10px 20px;
-margin-bottom:15px;
+  background-color:#F0F0F0;
+  border-radius:15px;
+  padding:20px 10px 10px 20px;
+  margin-bottom:15px;
 }
 
+.lishibanben ul{
+  margin-left: 760px;  
+}
 
+.lishibanben button {
+  background-color:#00bb99;
+}
+
+.lishibanben li {
+  background-color:#00bb99;
+  color:#fff!important;
+}
+
+.lishibanben a{
+  background-color:#00bb99;
+  color:#fff!important;
+}
+
+.heart {
+
+  
+}
 
