@@ -66,6 +66,22 @@ a:hover{
 	margin-right: 30px;
 	display: none;
 }
+
+#chooseBtn {
+	background-color: #19B68A;
+	font-weight: bolder;
+	font-size: 18px;
+	margin-bottom: 7%;
+	margin-left: -10%;
+}
+
+.loged .btn-default:hover{
+	color: #34495E;
+}
+
+.dropdown-menu {
+	min-width: 100px;
+}
 /* 导航栏 结束 */
 
 #freeLog {
