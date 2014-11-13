@@ -66,21 +66,6 @@ a:hover{
 	margin-right: 30px;
 	display: none;
 }
-
-#chooseBtn {
-	background-color: #19B68A;
-	font-weight: bolder;
-	font-size: 18px;
-	margin-bottom: 5%;
-}
-
-.loged .btn-default:hover{
-	color: #34495E;
-}
-
-.dropdown-menu {
-	min-width: 100px;
-}
 /* 导航栏 结束 */
 
 #freeLog {
@@ -127,9 +112,28 @@ a:hover{
 	margin-left: 23%;
 }
 
-/* 内容 */
 #content {
-	margin-top: 45px;
+	padding: 2%;
+}
+
+.bookDiv {
+	margin-left: 7%;
+	margin-top: 2%;
+	float: left;
+	height: 30%;
+	width: 16%;
+}
+
+.bookName {
+	text-align: center;
+}
+
+.checkbox {
+	margin-left: 10%;
+}
+
+/* 内容 */
+.container {
 	background-color: #FFF;
 	height: 100%;
 }
