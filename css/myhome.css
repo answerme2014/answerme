@@ -157,5 +157,9 @@ body {
 .tips {
 	margin-top: 150px;
 	margin-left: 170px;
+	display: none;
+}
+
+.course-page {
 	display: inherit;
 }
