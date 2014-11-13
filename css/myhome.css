@@ -11,7 +11,7 @@ body {
 }
 
 #content {
-	height: 615px;
+	height: 650px;
 	background-color: #FFF;
 	margin-bottom: 0!important;
 }
@@ -19,6 +19,10 @@ body {
 .left {
 	margin: 45px 2px 0 11px;
 	float: left;
+}
+
+.left .col-xs-4 {
+	border-radius: 6px;
 }
 
 .todo {
@@ -65,16 +69,16 @@ body {
 }
 
 .right {
-	margin: 45px 11px 0 0;
+	margin: 45px 11px 0 330px;
 	width: 810px;
 	height: 570px;
 	float: right;
 	background-color: #ecf0f1;
 	font-family: "微软雅黑";
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	border-radius: 6px;
 	overflow: auto;
 	overflow-x: hidden;
+	position: absolute;
 }
 
 .homework {
@@ -144,4 +148,14 @@ body {
 .btn {
 	width: 60px;
 	height: 40px;
+}
+
+.homework ul {
+	display: none;
+}
+
+.tips {
+	margin-top: 150px;
+	margin-left: 170px;
+	display: inherit;
 }
