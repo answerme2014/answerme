@@ -145,13 +145,13 @@ body {
 	margin-left: 500px;
 }
 
-.finish-bt .btn {
+.btn {
 	width: 60px;
 	height: 40px;
 }
 
 .homework ul {
-	display: inherit;
+	display: none;
 }
 
 .tips {

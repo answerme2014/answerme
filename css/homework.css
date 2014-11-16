@@ -1,6 +1,6 @@
 .middle {
-  width: 75%;
-  margin-left: 140px;
+  width: 80%;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -15,47 +15,44 @@
 }
 
 .zuoyecishu {
-margin-left:100px;
+  margin-left: 105px;
+  margin-top:20px;
   float: left;
-
+  width: 200px;
 }
 
 .zuoyeneirong {
-  width: 96%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   border-width: medium;
   padding:20px 10px 10px 20px;
+ ;
 }
 
 
-.bianji button {
-  background-color:#00bb99;
-
-
-}
 .bianji {
-margin-left:16px;
-margin-top:16px;
- margin-right:16px;
- float:left;
-
+  margin-right: 300px;
+  margin-top:20px;
+  border-width: medium;
+  float: left;
+  
 }
 
-.heart {
-  margin-left:16px;
-  margin-top:25px;
-  margin-right:16px;
-  color:#00bb99;
-  float:left;
+.bianji h4 {
+  height: 61px;
+}
+
+.fui-heart {
+  margin-left: 0px;
+  color:#00bb99
+
 }
 
 .lishibanben {
- margin-left:16px;
- margin-top:16px;
- margin-right:16px;
- float:left;
-
+  margin-top:12px;
+  margin-left: 100px;
+  border-width: medium;
 }
 
 .t1 {
@@ -66,17 +63,14 @@ margin-top:16px;
 }
 
 .lishibanben ul{
-
+  margin-left: 760px;  
 }
 
 .lishibanben button {
-
   background-color:#00bb99;
-
 }
 
 .lishibanben li {
-  border-radius:105px;
   background-color:#00bb99;
   color:#fff!important;
 }
@@ -86,14 +80,8 @@ margin-top:16px;
   color:#fff!important;
 }
 
+.heart {
 
-.a{
-float: right;
-width:400px;
+  
 }
-
-.number{
-margin-right:10px;
-}
-
 
