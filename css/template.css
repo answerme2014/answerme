@@ -21,6 +21,7 @@ a:hover{
  	margin-left: 10px;
  	margin-top: -10px;
 }
+
 .navbar .navbar-header img {
 	width: 55px;
 	height: 45px;
@@ -28,6 +29,10 @@ a:hover{
 
 .navbar .navbar-header span {
 	font-size: 22px;
+}
+
+.navbar .navbar-header {
+	margin-top: 8px;
 }
 
 .navbar span{
