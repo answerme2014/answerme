@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!--题目-->
-		<title>AnswerMe-个人主页</title>
+		<title>AnswerMe-Template</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap CSS-->
 		<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
@@ -12,10 +12,11 @@
 		<!--模板css-->
 		<link href="css/template.css" rel="stylesheet">
 		<!--添加你的CSS-->
-		<link href="css/myhome.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/myhome.css">
 		<!--收藏夹图标-->
 		<link rel="shortcut icon" href="resource/favor-icon.jpg">
 	</head>
+
 	<body>	
 		<!-- 导航栏 -->
 		<nav class="navbar navbar-inverse" role="navigation">
@@ -32,6 +33,17 @@
 					<a href="/settings.html">KenLee</a>
 					<span class="fui-heart"></span>
 					<a href="/like.html" class="like-num">256</a>
+					<div class="btn-group">
+					  <button id="chooseBtn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					   more <span class="caret"></span>
+					  </button>
+					  <ul id="dropdownMenu" class="dropdown-menu" role="menu">
+					    <li><a href="#">编辑历史</a></li>
+					    <li><a href="#">设置</a></li>
+					    <li class="divider"></li>
+					    <li><a href="/home.html">退出</a></li>
+					  </ul>
+					</div>
 				</div>
 				<div class="unloged">
 					<div id="btnNav" class="nav navbar-nav navbar-right btn-group">
@@ -41,13 +53,16 @@
 				</div>
 			</div>
 		</nav>
-
+		<!-- /.导航栏 -->
 		<!-- 模态框 -->
 		<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 				<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
 				<h4 class="modal-title" id="myModalLabel">登录</h4>
 			</div>
 			<div class="modal-body">
@@ -69,6 +84,12 @@
 									<div class="checkbox">
 										<label>
 											<input type="checkbox"> 记住我
+										</label>
+										<label id="freeLog">
+											<input type="checkbox"> 自动登录
+										</label>
+										<label id="forgetPassword">
+											<input type="checkbox"> 忘记密码
 										</label>
 									</div>
 								</div>
@@ -95,12 +116,6 @@
 								<label for="inputUsername1" class="col-sm-2 control-label">用户名</label>
 								<div class="col-sm-10">
 									<input type="email" class="form-control" id="inputUsername1">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputSex" class="col-sm-2 control-label">性别</label>
-								<div class="col-sm-10">
-									<input type="email" class="form-control" id="inputSex">
 								</div>
 							</div>
 							<div class="form-group">
