@@ -22,7 +22,7 @@
 		<!-- 导航栏 -->
 		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="home.html">
 					<img src="resource/logo-green.jpg">
 					<span>Answer Me</span>
 				</a>
@@ -31,7 +31,7 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse-01">
 				<div class="loged">
 					<span class="fui-user"></span>
-					<a href="/settings.html">KenLee</a>
+					<a href="myhome.html">KenLee</a>
 					<span class="fui-heart"></span>
 					<a href="/like.html" class="like-num">256</a>
 					<div class="btn-group">
@@ -42,7 +42,7 @@
 					    <li><a href="#">编辑历史</a></li>
 					    <li><a href="#">设置</a></li>
 					    <li class="divider"></li>
-					    <li><a href="/home.html">退出</a></li>
+					    <li><a href="home.html">退出</a></li>
 					  </ul>
 					</div>
 				</div>
@@ -197,8 +197,10 @@
 			<!-- 除了添加，不要改动一切其他东西-->
 			 <div id="wordInterest">请选择您感兴趣的课程：</div>
 		      <div class="bookDiv">
-		        <img id="book1" class="img-thumbnail" src="resource/book_1.jpg"></img>
-		        <div class="bookName">电子商务物流</div> 
+		        <a href="#">
+			        <img id="book1" class="img-thumbnail" src="resource/book_1.jpg"></img>
+			        <div class="bookName">电子商务物流</div>
+		        </a> 
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
@@ -206,8 +208,10 @@
 		        </div>
 		      </div>
 		      <div class="bookDiv ">
-		        <img id="book2" class="img-thumbnail" src="resource/book_2.jpg"/>
-		        <div class="bookName">实用软件工程</div> 
+		      	<a href="#">
+			        <img id="book2" class="img-thumbnail" src="resource/book_2.jpg"/>
+			        <div class="bookName">实用软件工程</div> 
+		      	</a>
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
@@ -215,8 +219,10 @@
 		        </div>
 		      </div>
 		      <div class="bookDiv">
-		        <img id="book3" class="img-thumbnail" src="resource/book_3.jpg"/>
-		        <div class="bookName">高等数学导论</div> 
+		      	<a href="#">
+		        	<img id="book3" class="img-thumbnail" src="resource/book_3.jpg"/>
+		        	<div class="bookName">高等数学导论</div> 
+		      	</a>
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
@@ -224,8 +230,10 @@
 		        </div>
 		      </div>
 		      <div class="bookDiv">
-		        <img id="book4" class="img-thumbnail" src="resource/book_4.jpg"/>
-		        <div class="bookName">线性代数简明教程</div> 
+		      	<a href="#">
+		        	<img id="book4" class="img-thumbnail" src="resource/book_4.jpg"/>
+		        	<div class="bookName">线性代数简明教程</div>
+		        </a>
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
@@ -233,8 +241,10 @@
 		        </div>        
 		      </div>
 		      <div class="bookDiv">
-		        <img id="book5" class="img-thumbnail" src="resource/book_5.jpg"/>
-		        <div class="bookName">离散数学</div> 
+		      	<a href="#">
+		        	<img id="book5" class="img-thumbnail" src="resource/book_5.jpg"/>
+		        	<div class="bookName">离散数学</div>
+		        </a> 
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
@@ -242,8 +252,10 @@
 		        </div>        
 		      </div>
 		      <div class="bookDiv">
-		        <img id="book6" class="img-thumbnail" src="resource/book_6.jpg"/>
-		        <div class="bookName">数字集成电路</div> 
+		        <a href="#">
+		        	<img id="book6" class="img-thumbnail" src="resource/book_6.jpg"/>
+		        	<div class="bookName">数字集成电路</div>
+		        </a> 
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
@@ -251,8 +263,10 @@
 		        </div>
 		      </div>
 		      <div class="bookDiv">
-		        <img id="book7" class="img-thumbnail" src="resource/book_7.jpg"/>
-		        <div class="bookName">数据库系统教程</div> 
+		      	<a href="#">
+			        <img id="book7" class="img-thumbnail" src="resource/book_7.jpg"/>
+			        <div class="bookName">数据库系统教程</div>
+		     	 </a>
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
@@ -260,16 +274,18 @@
 		        </div>
 		      </div>
 		      <div class="bookDiv">
-		        <img id="book8" class="img-thumbnail" src="resource/book_8.jpg"/>
-		        <div class="bookName">计算机网络教程</div> 
+		      	<a href="#">
+			        <img id="book8" class="img-thumbnail" src="resource/book_8.jpg"/>
+			        <div class="bookName">计算机网络教程</div>
+			      </a>
 		        <div class="checkbox">
 		          <label>
 		            <input type="checkbox"> 选择关注
 		          </label>
 		        </div>
 		      </div>
-		      <div>
-		        <button id="btnComplete" type="button" class="btn btn-primary btn-lg col-sm-offset-5">完成</button>
+		      <div id=btnComplete>
+		        <a href="myhome.html"><button id="btnComplete" type="button" class="btn btn-primary btn-lg col-sm-offset-5">完成</button></a>
 		      </div>
 		</div>
 		<!-- jQuery 的js -->
