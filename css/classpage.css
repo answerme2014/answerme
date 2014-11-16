@@ -1,0 +1,280 @@
+
+
+body {
+	margin:0!important;
+}
+
+#content {
+	height: 615px;
+	background-color: #FFF;
+	margin-bottom: 0!important;
+}
+.left {
+	margin: 45px 2px 0 11px;
+	float: left;
+}
+
+.cascade-search-list {
+	height: 700px;
+	width: 268px;
+	overflow: auto;
+	background-color: #2c3e50;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.course-search-field {
+	width: 150px;
+}
+
+.search-type {
+	float: left;
+	background-color: #1abc9c;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	margin-top: 1%;
+	border-color: #1abc9c;;
+}
+
+.search-type:after {
+	border-width: 0;
+}
+
+.search-type option {
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.course-list li:after {
+	display: none;
+}
+
+.course-name {
+	text-align: center;
+}
+
+.right {
+	margin: 45px 11px 0 0;
+	width: 810px;
+	height: 1000px;
+	float: right;
+	background-color: #ecf0f1;
+	font-family: "微软雅黑";
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.homework {
+	width: 805px;
+	height: 510px;
+}
+
+.homework ul {
+	padding-left: 8px;
+}
+
+.homework li{
+	list-style: none;
+}
+
+.homework-list-item {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: 15px;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 3px;
+	background-color: #f7f7f9;
+	border-color: #e1e1e8;
+	padding-bottom: 5px;
+}
+
+.homework-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 15px;
+}
+
+.homework-contents{
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.hw-tag {
+	font-weight: bold;
+}
+
+.hw-ddl {
+	font-weight: bold;
+}
+
+.hw-ddl-date {
+	color: #e74c3c!important;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.hw-course {
+	font-size: 17px;
+}
+
+.finish-bt {
+	position: relative;
+	margin-bottom: 10px;
+	margin-left: 500px;
+}
+
+.dropdown .btn {
+	width: 60px;
+	height:S 40px;
+}
+
+.dropdown .btn{
+	background-color: #34495e;
+	width: 260px;
+	height: 60px;
+}
+
+.dropdownbutton {
+	background-color: #2c3e50;
+	padding-left: 4px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	margin-bottom: 2px;
+}
+
+.dropdownbutton ul {
+	background-color: #2c3e50;
+	margin-left: 10px;
+	color: #FFF;
+}
+
+.item-name {
+	color: #FFF!important;
+}
+
+.info-bar{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border-bottom: 1px dotted #1abc9c;
+	text-align:left;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+
+}
+
+div.photo{
+	float: left;
+	width: 120px;
+	height: 150px;
+}
+
+.info{
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.class-name{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.else{
+	font-size: 15px;
+
+}
+
+img.photo{
+	width:120px;
+	height:150px
+}
+.favor-bar{
+	float: right;
+	width: 106px;
+	height: 41px;
+	z-index: 99;
+}
+a.book{
+	color: #34495e!important;
+}
+a.book:hover{
+	color: #1abc9c!important;
+}
+.hw-list{
+	border-width:2px;
+	border-style:solid;
+	border-color: #E1E1E8;
+	text-align: left!important;
+	overflow: hidden;
+	margin-right: 20px;
+	margin-left: 20px; 
+	width: 685px;
+}
+.hw-content{
+	margin-top: 10px;
+	font-size: 15px;
+}
+.hw-list .title{
+	font-weight: bolder;
+	font-size: 20px;
+}
+.hw-detail{
+	font-weight: bold;
+	text-indent: 2em;
+}
+.readmore{
+	margin-top: 10px;
+	font-weight: bold;
+}
+.complete{
+	margin-top: -30px;
+	float: right;
+}
+.right-content button{
+	background-color: #19B68A!important;
+}
+.right-content button:hover{
+	background-color: #48c9b0!important;
+}
+.hw-answer{
+	font-size: 13px;
+	text-indent: 3em;
+}
+
+.right-content{
+	margin: 45px 11px 0 0;
+	width: 810px;
+	height: 700px;
+	float: right;
+	background-color: #ecf0f1;
+	font-family: "微软雅黑";
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#download {
+	width: 80px;
+	height: 40px;
+	float: right;
+}
+
+.good {
+	margin-top: 20px;
+}
+
+.favor-bar {
+	height: 10px;
+}
+
+.add {
+	float: right;
+}
