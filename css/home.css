@@ -103,3 +103,15 @@ width:1300px;
 	height:40px;
 	font-size: 15px;
 }
+
+.like{
+	float: left;
+}
+
+.follow{
+	float: right;
+}
+
+.blank{
+		float: left;
+}

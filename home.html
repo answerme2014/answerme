@@ -231,8 +231,11 @@
        <div class="class_content"> 
         <p style="font-family:verdana;font-size:50%;color:black"> 《数据库系统概论》（第四版）是数据管理的最新技术，是计算机科学的重要分支，它为计算机专业、管理专业等众多学科提供利用计算机技术进行数据管理的基本理论知识，是计算机专业、管理专业等学科的专业必修课。 本课程主要介绍数据库的基本理论和应用方法。本课程的任务是通过各个教学环节，运用各种教学手段和方法，使学生在掌握数据模型、数据库管理系统、数据库语言及数据库设计理论等基本理论知识的基础上，逐步具有开发和设计数据库的能力，为进一步开发和设计大型信息系统打下坚实基础。 数据库技术和系统已经成为信息基础设施的核心技术和重要基础。数据库技术作为数据管理的最有效的手段，极大的促进了计算机应用的发展。 </p> 
         <div class="fans_num"> 
-         <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
-        </div> 
+
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "like">789赞</a> 
+           <a>&nbsp</a>
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "follow">233关注</a> 
+         </div> 
        </div> 
       </div> 
       <div class="classpic"> 
@@ -248,7 +251,10 @@
         <div class="class_content"> 
          <p style="font-family:verdana;font-size:50%;color:black"> 《会计电算化》，就是计算机技术在会计工作中的应用，是会计专业的核心课程，是经济类专业的一门专业主干课程，属于必修课。本课程在教学中按照会计核算岗位工作的基本流程，依托财务核算软件按照系统初始设置、建账、算账、结账、报表输出的过程安排整个教学内容，学生可以通过实际案例，利用财务软件完成整个会计核算工作，整个课程以突出对学生会计职业能力的培养为特色。 本课程以传授会计电算化必备的理论知识和基本操作技能为主要目的，要求学生掌握会计电算化的基本概念和基础知识，理解实现会计电算化的意义、步骤和方法。 </p> 
          <div class="fans_num"> 
-          <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
+
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "like">47赞</a> 
+           <a>&nbsp</a>
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "follow">233关注</a> 
          </div> 
         </div> 
        </div> 
@@ -264,9 +270,12 @@
          </div> 
          <div class="class_content"> 
           <p style="font-family:verdana;font-size:50%;color:black"> 本课程是机械制造类各专业的一门重要的专业课，它的任务是使学生掌握常用机构和通用零件的基本理论和基本知识，初步具有这方面的分析、应用、设计能力，并通过必要的基本技能训练，培养学生正确的设计思想和严谨的工作作风，为培养高素质技能型人才奠定基础。因此在机械类及近机械类专业的教学计划中占有重要地位和作用，是高等工科院校中近机械类专业一门主干课程，在人才培养的教学计划中占有重要的地位。该课程60学时，承担学院机电工程系各专业的机械设计基础课程的教学任务。 </p> 
-          <div class="fans_num"> 
-           <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
-          </div> 
+         <div class="fans_num"> 
+
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "like">7赞</a> 
+           <a>&nbsp</a>
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "follow">233关注</a> 
+         </div> 
          </div> 
         </div> 
         <div class="classpic"> 
@@ -295,6 +304,26 @@
 　　}
     }
   </script>  
+  <script >
+        $(".like").click(function(){
+  $(this).text(function(){
+    i = i+1;
+    if(i%2 == 1){
+      m = $(this).text();
+    return parseInt(m)+1+"赞";
+  }
+  else{
+    m = $(this).text();
+    return parseInt(m)-1+"赞";
+  }
+  });
+});
+</script>
+<script >
+  window.onload = function() {
+  i=0
+};
+</script>
    </div>
   </div>
  </body>
