@@ -1,3 +1,4 @@
+//编辑器js
 var ue = UE.getEditor('editor',{
     toolbars: [
             ['source', '|', 'undo', 'redo', '|',
@@ -20,22 +21,36 @@ var kfSubmit = function(){
         form.submit();
     })
 }
-//当窗向下滚动时没，目录保持在最顶部
-var ie6 = /msie 6/i.test(navigator.userAgent);
-var tableDv = $('.catalog');
-var st;
-//存储原来的距离顶部的距离
-tableDv.attr('otop', tableDv.offset().top); 
-$(window).scroll(function () {
-    st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
-    if (st>= parseInt(tableDv.attr('otop'))) {
-        if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果
-            tableDv.css({ position: 'absolute', top: st });
-        }
-        else if (tableDv.css('position') != 'fixed')
-            tableDv.css({ 'position': 'fixed', top: 0 });
+function edit(t){
+        //alert("click");
+        var liList=$("ul.allHomeworks").children();
+        //alert(liList.length);
+        liList.removeClass("editing");
+        thisLi=$(t).parent();
+        thisLi.addClass("editing");
+        //some Ajax to sever
+}
+function addone(t){
+    var num=parseInt($(t).parent().find("span.num").text());
+    //alert(num);
+    $(t).parent().before('<li class><span class="fui-triangle-right-large"></span><span class="homeworkName">第 <span class="num">'+String(num)+'</span>次作业</span> <span class="fui-plus add"  onclick="addone(this)"></span><span class="fui-new edit" onclick="edit(this)"></span></li>');
+    var now=$(t).parent();
+    while(1){
+        var onenum=parseInt(now.find("span.num").text());
+        //alert(onenum);
+        now.find("span.num").text(String(onenum+1));
+        now=now.next();
+        if(now.hasClass("last"))
+            break;
     }
-    else if (tableDv.css('position') != 'static')
-        tableDv.css({ 'position': 'static' });
+}
+//动画js
+$(document).ready(function(){
+    $(".addnew").click(function(){
+        var lastnum=$(this).parent().prev().find("span.num").text();
+        var num= parseInt(lastnum);
+        var last=$(this).parent().prev();
+        last.after('<li class><span class="fui-triangle-right-large"></span><span class="homeworkName">第 <span class="num">'+String(num+1)+'</span>次作业</span> <span class="fui-plus add"  onclick="addone(this)"></span><span class="fui-new edit" onclick="edit(this)"></span></li>');
+        edit();
+    });
 });
-
