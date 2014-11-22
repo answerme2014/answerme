@@ -11,7 +11,7 @@ body {
 }
 
 #content {
-	height: 650px;
+
 	background-color: #FFF;
 	margin-bottom: 0!important;
 }
@@ -146,13 +146,13 @@ body {
 	margin-left: 500px;
 }
 
-.btn {
+.finish-bt .btn {
 	width: 60px;
 	height: 40px;
 }
 
 .homework ul {
-	display: none;
+	display: inherit;
 }
 
 .tips {
@@ -162,5 +162,5 @@ body {
 }
 
 .course-page {
-	display: inherit;
+	display: none;
 }
