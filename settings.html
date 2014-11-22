@@ -12,6 +12,7 @@
 		<!--模板css-->
 		<link href="css/template.css" rel="stylesheet">
 		<!--添加你的CSS-->
+		<link href="css/settings.css" rel="stylesheet">
 
 		<!--收藏夹图标-->
 		<link rel="shortcut icon" href="resource/favor-icon.jpg">
@@ -38,8 +39,8 @@
 					   more <span class="caret"></span>
 					  </button>
 					  <ul id="dropdownMenu" class="dropdown-menu" role="menu">
-					    <li><a href="userHistory.html">编辑历史</a></li>
-					    <li><a href="settings.html">设置</a></li>
+					    <li><a href="#">编辑历史</a></li>
+					    <li><a href="settings">设置</a></li>
 					    <li class="divider"></li>
 					    <li><a href="home.html">退出</a></li>
 					  </ul>
@@ -193,15 +194,86 @@
 			<!-- 大家在content中填写自己的页面内容 -->
 			<!-- 把你的css添加到上面的css中，把你的js添加到下面的js中-->
 			<!-- 除了添加，不要改动一切其他东西-->
-			<h1>Hello world!</h>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="inputUsername1" class="col-sm-2 control-label">用户名</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputUsername1">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword1" class="col-sm-2 control-label">密码</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword1">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputRepeatpassword" class="col-sm-2 control-label">重复密码</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="inputRepeatpassword">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 control-label">邮箱</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail">
+					</div>
+				</div>							
+				<div class="form-group">
+					<label for="inputSchool" class="col-sm-2 control-label">学校</label>
+					<select class="form-control" id="selectSchool">
+						<option>选择你的学校</option>
+						<option>中山大学</option>
+						<option>清华大学</option>
+						<option>北京大学</option>
+						<option>华南理工大学</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="inputCollege" class="col-sm-2 control-label">学院</label>
+					<select class="form-control" id="selectCollege">
+						<option>选择你的学院</option>
+						<option>软件学院</option>
+						<option>岭南学院</option>
+						<option>医学院</option>
+						<option>社会教育学院</option>
+						<option>信息科学与技术学院</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="inputMajor" class="col-sm-2 control-label">专业</label>
+					<select class="form-control" id="selectMajor">
+						<option>选择你的专业</option>
+						<option>数字媒体</option>
+						<option>电子政务</option>
+						<option>嵌入式软件</option>
+						<option>通用软件</option>
+						<option>计算机应用</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="inputYear" class="col-sm-2 control-label">入学年份</label>
+					<select class="form-control" id="selectYear">
+						<option>选择你的入学年份</option>
+						<option>2014</option>
+						<option>2013</option>
+						<option>2012</option>
+						<option>2011</option>
+						<option>2010</option>
+					</select>
+				</div>
+			</form>
+			<button type="button" class="btn btn-block" data-dismiss="modal">确认修改</button>
 		</div>
 		<!-- /.内容 -->
+
 		<!-- jQuery 的js -->
 		<script src="js/vendor/jquery.min.js"></script>
 		<!-- 其他插件的js -->
 		<script src="js/flat-ui.min.js"></script>
 		<script src="js/prettify.js"></script>
 		<script src="js/application.js"></script>
+		<script src="js/settings.js"></script>
 		<!--添加你的js文件-->
 	</body>
 </html>

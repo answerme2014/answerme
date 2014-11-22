@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbar-collapse-01">
         <div class="loged">
           <span class="fui-user"></span>
-          <a href="/settings.html">KenLee</a>
+          <a href="myhome.html">KenLee</a>
           <span class="fui-heart"></span>
           <a href="/like.html" class="like-num">256</a>
           <div class="btn-group">
@@ -39,8 +39,8 @@
              more <span class="caret"></span>
             </button>
             <ul id="dropdownMenu" class="dropdown-menu" role="menu">
-              <li><a href="#">编辑历史</a></li>
-              <li><a href="#">设置</a></li>
+              <li><a href="userHistory.html">编辑历史</a></li>
+              <li><a href="settings.html">设置</a></li>
               <li class="divider"></li>
               <li><a href="/home.html">退出</a></li>
             </ul>
@@ -218,7 +218,7 @@
         <div class= "class_text" >
           <div class= "class_head">
             <p style="font-family:verdana;color:#19B68A">
-              <a href="url">《数据库原理》 中山大学软件学院  冯剑琳
+              <a href="classpage.html">《数据库原理》 中山大学软件学院  冯剑琳
               </a>
             </p>
           </div>
@@ -232,12 +232,15 @@
             5、合理的使用索引，删除数据表：mysql> DROP TABLE 表名；
           </p>
           <div class="fans_num"> 
-           <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
-          </div> 
+
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "like">47赞</a> 
+           <a>&nbsp</a>
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "follow">233关注</a> 
+         </div> 
         </div>
       </div>
       <div class = "classpic">
-       <a href="url"><img src="resource/yy/class1.jpg" width="130" ;="" align="right" height="180" /></a> 
+       <a href="classpage.html"><img src="resource/yy/class1.jpg" width="130" ;="" align="right" height="180" /></a> 
       </div> 
     </div>
     <div class = "clear"/>
@@ -245,7 +248,7 @@
         <div class= "class_text" >
           <div class= "class_head">
             <p style="font-family:verdana;color:#19B68A">
-              <a href="url">《数据库基础》 中山大学信息科学与技术学院  李凌
+              <a href="classpage.html">《数据库基础》 中山大学信息科学与技术学院  李凌
               </a>
             </p>
           </div>
@@ -259,12 +262,15 @@
             2).创建数据表“宿舍表”代码；
           </p>
           <div class="fans_num"> 
-           <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
-          </div> 
+
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "like">47赞</a> 
+           <a>&nbsp</a>
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "follow">233关注</a> 
+         </div> 
         </div>
       </div>
       <div class = "classpic">
-        <a href="url"><img src="resource/yy/class2.jpg" width="130" ;="" align="right" height="180" /></a> 
+        <a href="classpage.html"><img src="resource/yy/class2.jpg" width="130" ;="" align="right" height="180" /></a> 
       </div> 
       </div> 
       <div class = "clear"/>
@@ -272,7 +278,7 @@
         <div class= "class_text" >
           <div class= "class_head">
             <p style="font-family:verdana;color:#19B68A">
-              <a href="url">《数据库原理》 上海交通大学计算机系  王文
+              <a href="classpage.html">《数据库原理》 上海交通大学计算机系  王文
               </a>
             </p>
           </div>
@@ -286,12 +292,15 @@
             5、合理的使用索引，分析例2
           </p>
          <div class="fans_num"> 
-           <p style="font-family:verdana;font-size:30%;color:#19B68A"> <a href="url">47赞 </a> <a href="url">233关注 </a> </p> 
-          </div> 
+
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "like">47赞</a> 
+           <a>&nbsp</a>
+          <a href="javascript:;" style="font-family:verdana;font-size:30%;color:#19B68A" class = "follow">233关注</a> 
+         </div> 
         </div>
       </div>
       <div class = "classpic">
-        <a href="url"><img src="resource/yy/class3.jpg" width="130" ;="" align="right" height="180" /></a> 
+        <a href="classpage.html"><img src="resource/yy/class3.jpg" width="130" ;="" align="right" height="180" /></a> 
       </div> 
     </div>
   </div>
@@ -304,7 +313,7 @@
     <script src="js/flat-ui.min.js"></script> 
     <script src="js/prettify.js"></script> 
     <script src="js/application.js"></script> 
-    <script>
+     <script>
     function SubmitFunction()
     {
          var inputs = document.getElementById("search").value;// 提交输入框
@@ -315,6 +324,26 @@
 　　}
     }
   </script>  
+  <script >
+        $(".like").click(function(){
+  $(this).text(function(){
+    i = i+1;
+    if(i%2 == 1){
+      m = $(this).text();
+    return parseInt(m)+1+"赞";
+  }
+  else{
+    m = $(this).text();
+    return parseInt(m)-1+"赞";
+  }
+  });
+});
+</script>
+<script >
+  window.onload = function() {
+  i=0
+};
+</script>
    </div>
   </div>
  </body>
