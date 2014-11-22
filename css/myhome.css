@@ -152,7 +152,7 @@ body {
 }
 
 .homework ul {
-	display: none;
+	display: inherit;
 }
 
 .tips {
@@ -162,5 +162,5 @@ body {
 }
 
 .course-page {
-	display: inherit;
+	display: none;
 }
