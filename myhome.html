@@ -13,6 +13,7 @@
 		<link href="css/template.css" rel="stylesheet">
 		<!--添加你的CSS-->
 		<link href="css/myhome.css" rel="stylesheet">
+		<link href="css/classpage.css" rel="stylesheet">
 		<!--收藏夹图标-->
 		<link rel="shortcut icon" href="resource/favor-icon.jpg">
 	</head>
@@ -231,13 +232,17 @@
 
 			<div class="right">
 				<div class="col-xs-6 homework">
-					<ul>
+					<ul class="homework-list">
 						<li class="homework-list-item">
 							<div class="homework-content">
 								<div class="hw-name">
 									<h4 class="hw-course"><a href="homework.html">Web安全</a></h4>
 								</div>
-								<div class="hw-tag">作业</div>
+								<span class="hw-tag">第</span>
+								<span class="hw-tag hw-count">1</span>
+								<span class="hw-tag">次</span>
+								<span class="hw-tag">作</span>
+								<span class="hw-tag">业</span>
 								<div class="homework-contents">
 									MD5是计算机广泛使用的散列算法之一，用于确保信息传输的完整性和一致性。一段不定长度的信息经过MD5程序后，会生成四个32位数据，也就是128位的长度。介绍一下MD5的算法以及在密码保护上的应用。
 								</div>
@@ -253,7 +258,11 @@
 								<div class="hw-name">
 									<h4 class="hw-course"><a href="homework.html">计算机网络</a></h4>
 								</div>
-								<div class="hw-tag">作业</div>
+								<span class="hw-tag">第</span>
+								<span class="hw-tag hw-count">1</span>
+								<span class="hw-tag">次</span>
+								<span class="hw-tag">作</span>
+								<span class="hw-tag">业</span>
 								<div class="homework-contents">
 									每小组讨论完成，以小组为单位提交，只需组长提交即可，组员无需提交。<br/>
 
@@ -277,7 +286,11 @@
 								<div class="hw-name">
 									<h4 class="hw-course"><a href="homework.html">编译原理</a></h4>
 								</div>
-								<div class="hw-tag">作业</div>
+								<span class="hw-tag">第</span>
+								<span class="hw-tag hw-count">1</span>
+								<span class="hw-tag">次</span>
+								<span class="hw-tag">作</span>
+								<span class="hw-tag">业</span>
 								<div class="homework-contents">
 									HW2.<br/>
 									提交文件： <br/>
@@ -301,6 +314,87 @@
 					</div>
 
 					<div class="course-page">
+						<div class="info-bar">
+							<div class="course-info-bar">
+								<div class="photo">
+									<img class="photo"src="resource/sd.jpg" alt="bookpic">
+								</div>
+								<div class="info">
+									<span class="class-name">算法分析与设计</span>
+									<a span class="fui-new edit" href="#"></a>
+									<br>
+									<span class="else">任课教师：<a class="book" href="...">郭嵩山</a></span>
+									<br>
+									<span class="else">课程教材：<a class="book" href="...">《算法导论》第四版 机械工业出版社</a></span>
+									<br>
+
+									<span class="else">关注数：242</span>
+									<div class="favor-bar">
+										<a span class="fui-plus add" href="#"></a>
+									</div>
+									<br>
+									<span class="else">点赞数：68</span>
+									<div class="favor-bar">
+										<a span class="fui-heart add" href="#"></a>
+									</div>
+								</div>
+								<div class="dropdown" id="download">
+									<button class="btn btn-default dropdown-toggle" type="button" id="download" data-toggle="dropdown">
+									下载
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="download">
+										<li role="presentation"><a role="menuitem" tabindex="-1" href
+										="#">一.ppt</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href
+										="#">二.ppt</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href
+										="#">三.ppt</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href
+										="#">四.ppt</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="h-list-info">
+								<div class="hw-list-info">
+									<div class="tile hw-list">
+										<div class="title">第一次作业</div>
+										<span>作业 : </span>
+										<div>
+										    <div class="hw-detail">1.《算法导论》求递归时间复杂度“主方法”的证明</div>
+										 	<div class="hw-answer">解:我们先假设一个结论T(n) = O(lg(n - b))，并且假设对T(n / 2上取整)成立（这就是数学归纳法了），那么把T(n / 2上取整)用假设的结论进行代换，我们有T(n) <= lg((n - b)) / 2上取整)
+
+											<= lg((n - b) / 2 + 1) + 1 = lg(n - b + 2),对于任意的b >= 2...</div>
+										</div>
+										<div class="readmore">
+			 								<a href="...">ReadMore...>> </a>
+										</div>
+										<div class="complete">
+										    <button class="btn btn-primary"><span class="fui-triangle-down"></span></button>
+										</div>
+	    							</div>
+	    							<div class="tile hw-list">
+										<div class="title">第二次作业</div>
+										<span>作业 : </span>
+										<div>
+			  								<div class="hw-detail">1.《算法导论》求递归时间复杂度“主方法”的证明</div>
+			  								<div class="hw-answer">解:我们先假设一个结论T(n) = O(lg(n - b))，并且假设对T(n / 2上取整)成立（这就是数学归纳法了），那么把T(n / 2上取整)用假设的结论进行代换，我们有T(n) <= lg((n - b)) / 2上取整)
+
+											<= lg((n - b) / 2 + 1) + 1 = lg(n - b + 2),对于任意的b >= 2...</div>
+										</div>
+										<div class="readmore">
+			  								<a href="...">ReadMore...>> </a>
+										</div>
+										<div class="complete">
+			  								<button class="btn btn-primary"><span class="fui-triangle-down"></span></button>
+										</div>
+	    							</div>
+	    							<a span class="fui-plus add" href="#"></a>
+									<br>
+								</div>
+							</div>
+	 					</div>
 					</div>
 				</div>
 			</div>

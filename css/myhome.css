@@ -11,7 +11,6 @@ body {
 }
 
 #content {
-
 	background-color: #FFF;
 	margin-bottom: 0!important;
 }
@@ -30,7 +29,7 @@ body {
 }
 
 .course-list {
-	height: 570px;
+	height: 576px;
 	width: 268px;
 	overflow: auto;
 	background-color: #2c3e50;
@@ -71,7 +70,7 @@ body {
 .right {
 	margin: 45px 11px 0 330px;
 	width: 810px;
-	height: 570px;
+	height: 576px;
 	float: right;
 	background-color: #ecf0f1;
 	font-family: "微软雅黑";
@@ -123,7 +122,13 @@ body {
 
 .hw-tag {
 	font-weight: bold;
-	padding-left: 2px;
+	margin-left: 0px;
+	margin-right: -4px;
+}
+
+.hw-count {
+	margin-left: 2px;
+	margin-right: -2px;
 }
 
 .hw-ddl {
@@ -149,9 +154,10 @@ body {
 .finish-bt .btn {
 	width: 60px;
 	height: 40px;
+	font-weight: bold;
 }
 
-.homework ul {
+.homework-list {
 	display: inherit;
 }
 
@@ -163,4 +169,9 @@ body {
 
 .course-page {
 	display: none;
+}
+
+#download {
+	background-color: #1abc9c;
+	border-radius: 6px;
 }
