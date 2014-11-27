@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!--题目-->
-		<title>AnswerMe-Template</title>
+		<title>Answer-课程主页</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap CSS-->
 		<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
@@ -303,6 +303,21 @@
 						</ul>
 					</div>
 				</div>
+				<div class="dropdown">
+	  				<div class="tile todo-bg dropdownbutton">
+						<button class="btn btn-default dropdown-toggle" type="button" id="university" data-toggle="dropdown">
+						院校
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="university">
+							<li role="presentation"><a class="item-name" role="menuitem" tabindex="-1" href="#">电子政务</a></li>
+							<li role="presentation"><a class="item-name" role="menuitem" tabindex="-1" href="#">嵌入式软件设计</a></li>
+							<li role="presentation"><a class="item-name" role="menuitem" tabindex="-1" href="#">数字媒体</a></li>
+							<li role="presentation"><a class="item-name" role="menuitem" tabindex="-1" href="#">计算机应用软件</a></li>
+							<li role="presentation"><a class="item-name" role="menuitem" tabindex="-1" href="#">通信软件</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -310,45 +325,41 @@
 	 <div class="right-content tile">
 		<div class="info-bar">
 			<div class="course-info-bar">
-			<div class="photo">
-				<img class="photo"src="resource/sd.jpg" alt="bookpic">
-			</div>
-			<div class="info">
-				<span class="class-name">算法分析与设计</span>
-				<a span class="fui-new edit" href="#"></a>
-				<br>
-				<span class="else">任课教师：<a class="book" href="...">郭嵩山</a></span>
-				<br>
-				<span class="else">课程教材：<a class="book" href="...">《算法导论》第四版 机械工业出版社</a></span>
-				<br>
-
-				<span class="else">关注数：242</span>
-			<div class="favor-bar">
-				<a span class="fui-plus add" href="#"></a>
-			</div>
-			<br>
-				<span class="else">点赞数：68</span>
-			<div class="favor-bar">
-				<a span class="fui-heart add" href="#"></a>
-			</div>
+				<div class="photo">
+					<img class="photo"src="resource/sd.jpg" alt="bookpic">
+				</div>
+				<div class="info">
+					<span class="class-name">算法分析与设计</span>
+					<a span class="fui-new edit" href="#"></a>
+					<br>
+					<span class="else">任课教师：郭嵩山</span>
+					<br>
+					<span class="else">上课地点：公共教学楼C103</span>
+					<br>
+					<span class="else">上课时间：星期二第三节至第五节</span>
+					<br>
+					<div class="dropdown" id="download">
+						<button class="btn btn-default dropdown-toggle" type="button" id="download" data-toggle="dropdown">
+						下载
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="download">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">一.ppt</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">二.ppt</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">三.ppt</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">四.ppt</a></li>
+						</ul>
+					</div>
+					<br>
+				</div>
+				<div class="takelike">
+					<a span class="fui-plus add" href="#"></a>
+					<span class="else else-num">242</span>
+					<br>
+					<a span class="fui-heart add" href="#"></a>
+					<span class="else else-num">68</span>
+				</div>
 		</div>
-			<div class="dropdown" id="download">
-				<button class="btn btn-default dropdown-toggle" type="button" id="download" data-toggle="dropdown">
-					下载
-					<span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu" role="menu" aria-labelledby="download">
-					<li role="presentation"><a role="menuitem" tabindex="-1" href
-				="#">一.ppt</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href
-				="#">二.ppt</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href
-				="#">三.ppt</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href
-				="#">四.ppt</a></li>
-				</ul>
-			</div>
-			</div>
 
 		<div class="h-list-info">
 		<div class="hw-list-info">
@@ -364,9 +375,6 @@
 			<div class="readmore">
 			  <a href="...">ReadMore...>> </a>
 			</div>
-			<div class="complete">
-			  <button class="btn btn-primary"><span class="fui-triangle-down"></span></button>
-			</div>
 	    </div>
 	    <div class="tile hw-list">
 			<div class="title">第二次作业</div>
@@ -380,15 +388,13 @@
 			<div class="readmore">
 			  <a href="...">ReadMore...>> </a>
 			</div>
-			<div class="complete">
-			  <button class="btn btn-primary"><span class="fui-triangle-down"></span></button>
-			</div>
 	    </div>
-	    <a span class="fui-plus add" href="#"></a>
-		<br>
+	    <div class="tile hw-list">
+			<span class="else"><a class="book" href="...">添加新的作业</a></span>
+	    </div>
 		</div>
 		</div>
-	 </div>
+	</div>
 	</div>
 
 
