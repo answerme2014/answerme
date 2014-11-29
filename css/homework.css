@@ -1,59 +1,80 @@
+
 .middle {
-  width: 80%;
-  margin-left: auto;
+  width: 90%;
+  margin-left:auto;
   margin-right: auto;
-}
+ }
+
 
 .header {
-  margin: 10px;
+  margin-left: 10px;
+  margin-top:10px;
+  margin-right: 10px;
   padding: 10px;
   padding-bottom: 60px;
   border-color: gray;
-  border-style:solid;
   border-width: 0;
   border-bottom-width: 1px;
 }
 
+
 .zuoyecishu {
-  margin-left: 105px;
-  margin-top:20px;
+  margin-left:100px;
+  margin-top:-14px;
   float: left;
-  width: 200px;
 }
 
+
 .zuoyeneirong {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: medium;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top:0px;
   padding:20px 10px 10px 20px;
- ;
+}
+
+
+.bianji button {
+  background-color:#00bb99;
 }
 
 
 .bianji {
-  margin-right: 300px;
-  margin-top:20px;
-  border-width: medium;
-  float: left;
-  
+  margin-left:6px;
+  margin-top:16px;
+  margin-right:16px;
+  float:left;
 }
 
-.bianji h4 {
-  height: 61px;
+
+.jubao button {
+  background-color:#00bb99;
 }
 
-.fui-heart {
-  margin-left: 0px;
-  color:#00bb99
 
+.jubao {
+  margin-left:6px;
+  margin-top:16px;
+  margin-right:16px;
+  float:left;
 }
+
+.heart {
+  margin-left:6px;
+  margin-top:25px;
+  margin-right:16px;
+  color:#00bb99;
+  float:left;
+}
+
 
 .lishibanben {
-  margin-top:12px;
-  margin-left: 100px;
-  border-width: medium;
+  margin-left:6px;
+  margin-top:16px;
+  margin-right:16px;
+  float:left;
 }
+
 
 .t1 {
   background-color:#F0F0F0;
@@ -62,26 +83,34 @@
   margin-bottom:15px;
 }
 
-.lishibanben ul{
-  margin-left: 760px;  
-}
 
 .lishibanben button {
   background-color:#00bb99;
+
 }
 
+
 .lishibanben li {
+  border-radius:105px;
   background-color:#00bb99;
   color:#fff!important;
 }
+
 
 .lishibanben a{
   background-color:#00bb99;
   color:#fff!important;
 }
 
-.heart {
 
-  
+.a{
+  float: right;
+  width:450px;
 }
+
+
+.number{
+  margin-right:10px;
+}
+
 

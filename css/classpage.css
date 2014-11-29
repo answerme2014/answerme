@@ -225,3 +225,7 @@ img.photo{
 	overflow: auto;
 	overflow-x: hidden; 
 }
+
+.takelike .add {
+	color: #16a085;
+}

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	var good_item = 0;
 	$("li.course-list-item").click(function() {
 		$("li.course-list-item").css("background-color", "#34495e");
 		$(this).css("background", "transparent");
@@ -13,16 +14,42 @@ $(document).ready(function() {
 	});
 
 	$("#good-img").click(function() {
-		var a = $("#good").text();
-		var sum = 0;
-		var j = 1;
-		for ( var i = a.length - 1; i >= 0; i--) {
-			sum += a[i] * j;
-			j *= 10;
+		if (good_item == 0) {
+			var a = $("#good").text();
+			var sum = 0;
+			var j = 1;
+			for ( var i = a.length - 1; i >= 0; i--) {
+				sum += a[i] * j;
+				j *= 10;
+			}
+			sum += 1;
+			$("#good").text(sum);
+			$("#good-img").css("color", "#dc143c");	
+			good_item = 1;
+		} else if (good_item == 1) {
+			var a = $("#good").text();
+			var sum = 0;
+			var j = 1;
+			for ( var i = a.length - 1; i >= 0; i--) {
+				sum += a[i] * j;
+				j *= 10;
+			}
+			sum -= 1;
+			$("#good").text(sum);
+			$("#good-img").css("color", "#16a085");
+			good_item = 0;		
 		}
-		sum += 1;
-		$("#good").text(sum);
-		$("#good-img").css("color", "#2c3e50");
 	});
 
+	$("#good-img").mouseover(function() {
+		$("#good-img").css("color", "#dc143c");	
+	});
+
+	$("#good-img").mouseout(function() {
+		if (good_item == 0) {
+			$("#good-img").css("color", "#16a085");	
+		} else if (good_item == 1) {
+			$("#good-img").css("color", "#dc143c");	
+		}
+	});
 });
