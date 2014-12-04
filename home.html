@@ -293,38 +293,6 @@
     <script src="js/flat-ui.min.js"></script> 
     <script src="js/prettify.js"></script> 
     <script src="js/application.js"></script> 
-    <script>
-    function SubmitFunction()
-    {
-         var inputs = document.getElementById("search").value;// 提交输入框
-        if (inputs == "")
-　　{
-　　　　　document.getElementById("search").value="输入不能为空!";
-
-　　}
-    }
-  </script>  
-  <script >
-        $(".like").click(function(){
-  $(this).text(function(){
-    i = i+1;
-    if(i%2 == 1){
-      m = $(this).text();
-    return parseInt(m)+1+"赞";
-  }
-  else{
-    m = $(this).text();
-    return parseInt(m)-1+"赞";
-  }
-  });
-});
-</script>
-<script >
-  window.onload = function() {
-  i=0
-};
-</script>
-   </div>
-  </div>
+    <script src="js/home.js"></script> 
  </body>
 </html>
