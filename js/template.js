@@ -40,9 +40,9 @@ $(function(){
 
 $(function(){
     $('#btnRegister').click(function(){
-        if( $('inputPassword1')!= $('inputRepeatpassword')){
+        if( $('#inputPassword1')!= $('#inputRepeatpassword')){
             alert("您输入的密码不相符，请重新输入");
-            $('inputPassword1').value=""; 
+            $('#inputPassword1').value=""; 
         }
         else{
          $.ajax({
