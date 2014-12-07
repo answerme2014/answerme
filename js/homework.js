@@ -1,6 +1,26 @@
 $(document).ready(function(){
-    i = 0;
-    var username = $.cookie("username");
+    $.ajax({
+        type: "GET",
+        url: "",
+        dataType: "json",
+        success: function(data) {
+            $("div.zuoyecishu").children("h3").text(data.title);
+            var hid = "hid";
+            hid += data.hid;
+            $("div.middle").attr("id", hid);
+            $("a.like-num").text(data.like_number);
+            var vi = 1;
+            for (vi = 1; vi < data.version.length + 1; vi++) {
+                var txt = "#v";
+                txt += vi;
+                $(txt).children(".date")=data.update_time[vi-1];
+            }
+            $("div.t1").html(data.content);
+        }
+    });
+
+    var i = 0;
+    //var username = $.cookie("username");
     $(".bianji button").click(function() {
         ClickBianji();
         $(this).css("background-color", "#00bb99")
@@ -36,7 +56,7 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: "",
-            data: {like_number : like_number};
+            data: {like_number : like_number},
             dataType: "json",
             success: function(data) {
 

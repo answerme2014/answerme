@@ -1,6 +1,23 @@
 $(document).ready(function() {
-	var good_item = 0;
-	var care_item = 0;
+	/* Load classpage */
+	$.ajax({
+		type: "GET",
+		url: "test.json",
+		dataType: "json",
+		success: function(data) {
+			var txt = "cid";
+			txt += data.cid;
+			$("div.right-content").attr("id", txt);
+			$("span.class-name").text(data.course_name);
+			$("#course-teacher").text(data.teacher);
+			$("#course-place").text(data.course_place);
+			$("#course-time").text(data.course_time);
+			$("img.photo").attr("src", data.picture);
+			$("#care").text(data.taken_number);
+			$("#good").text(data.like_number);
+
+		}
+	});
 
 	$("#good-img").click(function() {
 		if (good_item == 0) {

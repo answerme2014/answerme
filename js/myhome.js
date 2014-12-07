@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	$.ajax({
+		type: "POST",
+		url: "",
+		dataType: "json",
+		success: function(data) {
+
+		}
+	});
+
 	var good_item = 0;
 	
 	$("li.course-list-item").click(function() {
@@ -10,10 +19,22 @@ $(document).ready(function() {
 		$("div.course-page").css("display", "inherit");
 
 		htmlobj=$.ajax({
+			type: "GET",
 			url: "test.json",
-			async: false
+			dataType: "json",
+			success: function(data) {
+				var txt = "cid";
+				txt += data.cid;
+				$("div.right-content").attr("id", txt);
+				$("span.class-name").text(data.course_name);
+				$("#course-teacher").text(data.teacher);
+				$("#course-place").text(data.course_place);
+				$("#course-time").text(data.course_time);
+				$("img.photo").attr("src", data.picture);
+				$("#care").text(data.taken_number);
+				$("#good").text(data.like_number);
+			}
 		});
-		$("div.course-page").html(htmlobj.responseText.$("div.course-page").html());
 	});
 
 	$("span.finish-bt").click(function() {
