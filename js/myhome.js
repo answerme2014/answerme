@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	var good_item = 0;
+	
 	$("li.course-list-item").click(function() {
 		$("li.course-list-item").css("background-color", "#34495e");
 		$(this).css("background", "transparent");
@@ -7,10 +8,25 @@ $(document).ready(function() {
 		$(this).find("h4").css("color", "#19B68A");
 		$("div.homework").find("ul.homework-list").css("display", "none");
 		$("div.course-page").css("display", "inherit");
+
+		htmlobj=$.ajax({
+			url: "test.json",
+			async: false;
+		});
+		$("div.course-page").html(htmlobj.responseText.$("div.course-page").html());
 	});
 
 	$("span.finish-bt").click(function() {
 		$(this).parent().parent().remove();
+
+		$.ajax({
+			type: "POST",
+			url: "",
+			data: {}
+			dataType: "json",
+			success: function(data) {
+			}
+		});
 	});
 
 	$("#good-img").click(function() {
@@ -39,6 +55,16 @@ $(document).ready(function() {
 			$("#good-img").css("color", "#16a085");
 			good_item = 0;		
 		}
+
+		$.ajax({
+			type: "POST",
+			url: "",
+			data: {like_number: sum},
+			dataType: "json",
+			success: function(data) {
+				
+			}
+		});
 	});
 
 	$("#good-img").mouseover(function() {

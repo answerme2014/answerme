@@ -27,6 +27,16 @@ $(document).ready(function() {
 			$("#good-img").css("color", "#16a085");
 			good_item = 0;		
 		}
+
+		$.ajax({
+			type: "POST",
+			url: "",
+			data: {like_number: sum},
+			dataType: "json",
+			success: function(data) {
+				
+			}
+		});
 	});
 
 	$("#good-img").mouseover(function() {
@@ -67,6 +77,16 @@ $(document).ready(function() {
 			$("#care-img").css("color", "#16a085");
 			care_item = 0;		
 		}
+
+		$.ajax({
+			type: "POST",
+			url: "",
+			data: {take_number: sum},
+			dataType: "json",
+			success: function(data) {
+				
+			}
+		});
 	});
 
 	$("#care-img").mouseover(function() {
