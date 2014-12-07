@@ -184,3 +184,7 @@ body {
 .fui-heart:after {
 	color: #dc143c!important;
 }
+
+.h-list-info {
+	margin-top: 10px;
+}

@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 		htmlobj=$.ajax({
 			url: "test.json",
-			async: false;
+			async: false
 		});
 		$("div.course-page").html(htmlobj.responseText.$("div.course-page").html());
 	});
@@ -22,7 +22,7 @@ $(document).ready(function() {
 		$.ajax({
 			type: "POST",
 			url: "",
-			data: {}
+			data: {},
 			dataType: "json",
 			success: function(data) {
 			}
@@ -77,5 +77,49 @@ $(document).ready(function() {
 		} else if (good_item == 1) {
 			$("#good-img").css("color", "#dc143c");	
 		}
+	});
+
+	$("a.edit").click(function() {
+		var course_teacher = $("#course-teacher").text();
+		var course_time = $("#course-time").text();
+		var course_place = $("#course-place").text();
+		var txt1 = "<input id=teacher1>";
+		var txt2 = "<input id=place1>";
+		var txt3 = "<input id=time1> <button class=btn btn-default id=finish-edit>完成</button>";
+		$("#course-teacher").text("");
+		$("#course-teacher").append(txt1);
+		$("#teacher1").attr("value", course_teacher);
+		$("#course-place").text("");
+		$("#course-place").append(txt2);
+		$("#place1").attr("value", course_place);
+		$("#course-time").text("");
+		$("#course-time").append(txt3);
+		$("#time1").attr("value", course_time);	
+		$("#finish-edit").css("color", "white");
+		$("#finish-edit").css("background-color", "#1abc9c")
+		$("#download").hide();
+	});
+
+	$("#finish-edit").click(function() {
+		var course_teacher = $("#teacher1").text();
+		var course_place = $("#place1").text();
+		var course_time = $("#time1").text();
+
+		$.ajax({
+			type: "POST",
+			url: "",
+			data: {teacher:course_teacher, course_place:course_place, course_time:course_time},
+			dataType: "json",
+			success: function(data) {
+				$("#time1").remove();
+				$("#place1").remove();
+				$("#teacher1").remove();
+				$("#finish-edit").remove();
+				$("#course-teacher").text(course_teacher);
+				$("#course-place").text(course_place);
+				$("#course-time").text(course_time);
+				$("#download").show();
+			}
+		});
 	});
 });

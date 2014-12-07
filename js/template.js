@@ -6,6 +6,8 @@ $(function(){
              data: {username:$("#inputUsername").val(), password:$("#inputPassword").val()},
              dataType: "json",
              success: function(data){
+                         if ($.cookie("username")!=$("#inputUsername").val())
+                             $.cookie("username", $("#inputUsername").val());
                          $('.unloged').css('display','none'); 
                          $('.loged').css('display','block');    //清空resText里面的所有内容
                          $("#usersname").val() = data.username;
@@ -28,7 +30,8 @@ $(function(){
              success: function(status){
                          if(status == 1){
                             $('.unloged').css('display','block'); 
-                         $('.loged').css('display','none');    //清空resText里面的所有内容
+                            $('.loged').css('display','none');    //清空resText里面的所有内容
+                            $.cookie("username", null);
                          }
                          if(status == 0){
                              alert("未成功退出");
